@@ -21,7 +21,7 @@ void ConverCode(
   string DirOperate = Default_DirOperate,
   string OutputFilePath = Default_OutputFilePath,
   string OutputFileName = Default_OutputFileName,
-  string AverageTimeGap = Default_AverageTimeGap
+  Long64_t AverageTimeGap = Default_AverageTimeGap
 ){
   // Create the directory of the output file path
   system(("mkdir -p "+OutputFilePath).data());
