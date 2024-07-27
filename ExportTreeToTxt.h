@@ -44,6 +44,8 @@ void ExportTreeToTxt(
     tree->SetBranchAddress("pwidth", &pwidth);
     tree->SetBranchAddress("pcnt", &pcnt);
     tree->SetBranchAddress("tcnt", &tcnt);
+    tree->SetBranchStatus("dtimeInt", 0);
+    // Debug for the branch problem
 
     // 打開輸出文件
     std::ofstream outputFile(outputFilename.data());
