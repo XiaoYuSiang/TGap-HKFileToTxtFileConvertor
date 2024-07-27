@@ -3,17 +3,20 @@ For the convert the TGap*.root and the HK-raw.txt to be the txt file
 
 The main controller is ConverCode.C
 
+Load the default information to or by the input value to be the setting for convert the data.
 
-void ConverCode(
-// Load the default information to convert or by the input imformation.
-  string GapFile = Default_GapFile,
-  string HksDirN = Default_HksDirN,
-  string DirOperate = Default_DirOperate,
-  string OutputFilePath = Default_OutputFilePath,
-  string OutputFileName = Default_OutputFileName,
-  string AverageTimeGap = Default_AverageTimeGap
-){
+    void ConverCode(
+      string GapFile = Default_GapFile,
+      string HksDirN = Default_HksDirN,
+      string DirOperate = Default_DirOperate,
+      string OutputFilePath = Default_OutputFilePath,
+      string OutputFileName = Default_OutputFileName,
+      string AverageTimeGap = Default_AverageTimeGap
+    )
 
+PS: If you want to use the scripe to do the muti-Tread conversion, you need to make the "DirOperate" and "OutputFileName" to be differnet.
+
+Some detail of the setting value and the default for thew expample:
 
 Default path name of the Gap T .root file
 
